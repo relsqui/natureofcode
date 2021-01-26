@@ -2,6 +2,10 @@ local vector = {}
 
 
 local metaVector = {}
+function metaVector:copy()
+  return vector.new(self.x, self.y, self.z)
+end
+
 function metaVector:add(w)
   self.x = self.x + w.x
   self.y = self.y + w.y

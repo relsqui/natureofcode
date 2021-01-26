@@ -5,7 +5,6 @@ local rabbit = {}
 
 function rabbit.new(x, y)
   local r = mover.new(x, y)
-  r.radius = 12
   r.hopChance = 0.04
   r.hopAcc = 10
   r.hopSlowdown = -0.08

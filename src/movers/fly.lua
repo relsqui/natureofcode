@@ -5,7 +5,6 @@ local fly = {}
 
 function fly.new(x, y)
   local f = mover.new(x, y)
-  f.radius = 4
   f.meander = 0.6
   f.dartAcc = 3
   f.dartChance = 0.05

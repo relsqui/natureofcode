@@ -2,6 +2,7 @@ local mover = require("mover")
 local fish = require("movers/fish")
 local fly = require("movers/fly")
 local rabbit = require("movers/rabbit")
+local snake = require("movers/snake")
 
 local gameState = {}
 
@@ -11,6 +12,7 @@ function gameState:load(arg)
     fish.new(100, 100);
     fly.new(100, 200);
     rabbit.new(100, 300);
+    snake.new(100, 400);
   }
 end
 
