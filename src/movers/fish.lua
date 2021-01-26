@@ -22,8 +22,8 @@ function fish.new(x, y)
     end
     if f.turning ~= 0 then
       f.acc = vector.new(f.vel.y * f.turning, f.vel.x * -f.turning)
+      f.acc:setMag(f.turnAcc)
     end
-    f.acc:setMag(f.turnAcc)
     f.__index.update(f, dt)
   end
   return f
