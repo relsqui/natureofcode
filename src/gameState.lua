@@ -1,4 +1,5 @@
 local fish = require("movers/fish")
+local fly = require("movers/fly")
 local mover = require("mover")
 
 local gameState = {}
@@ -6,8 +7,9 @@ local gameState = {}
 function gameState:load(arg)
   self.w, self.h, self.flags = love.window.getMode()
   self.movers = {
-    -- mover.new(0, 100);
-    fish.new(0, 200);
+    -- mover.new(100, 100);
+    -- fish.new(100, 200);
+    fly.new(100, 300);
   }
 end
 
